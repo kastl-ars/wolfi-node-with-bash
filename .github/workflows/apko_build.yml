@@ -34,7 +34,8 @@ jobs:
         uses: actions/checkout@v4
 
       # https://github.com/chainguard-images/actions/tree/main/apko-publish
-      - uses: distroless/actions/apko-publish@main
+      - id: wolfi-node22-with-bash
+        uses: distroless/actions/apko-publish@main
         with:
           # Config is the configuration file to use for the image build.
           # Optional, will use .apko.yaml without a defined one.
