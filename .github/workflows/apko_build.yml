@@ -30,6 +30,9 @@ jobs:
       packages: write
       attestations: write
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       # https://github.com/chainguard-images/actions/tree/main/apko-publish
       - uses: distroless/actions/apko-publish@main
         with:
