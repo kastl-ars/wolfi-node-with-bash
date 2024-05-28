@@ -38,7 +38,7 @@ jobs:
         with:
           # Config is the configuration file to use for the image build.
           # Optional, will use .apko.yaml without a defined one.
-          config: wolfi-node-with-bash.yaml
+          config: wolfi-node22-with-bash.yaml
           # Tag is the tag that will be published.
           # Required.
           tag: ghcr.io/kastl-ars/wolfi-node-with-bash:latest
