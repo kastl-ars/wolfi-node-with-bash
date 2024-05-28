@@ -11,7 +11,7 @@ contents:
     - bash
     - busybox
     - npm
-    - nodejs
+    - nodejs-22
 
 # By convention, Node apps run in an /app directory, which should be owned by
 # the non-root node user.
