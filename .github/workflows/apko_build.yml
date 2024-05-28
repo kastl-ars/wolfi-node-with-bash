@@ -30,9 +30,8 @@ jobs:
       packages: write
       attestations: write
     steps:
-      - id: build and publish an image with apko
-        # https://github.com/chainguard-images/actions/tree/main/apko-publish
-        uses: distroless/actions/apko-publish@main
+      # https://github.com/chainguard-images/actions/tree/main/apko-publish
+      - uses: distroless/actions/apko-publish@main
         with:
           # Config is the configuration file to use for the image build.
           # Optional, will use .apko.yaml without a defined one.
